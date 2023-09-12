@@ -32,7 +32,7 @@ jobs:
       - name: Publish Library
         run: |
           echo "Publishing and Releasing library 🚀"
-          ./gradlew :ksui:publishAllPublicationsToSonatypeRepository
+          ./gradlew :ksui:publishiosX64PublicationToSonatypeRepository
           echo "Published and Released ✅"
         env:
           VERSION_NAME: ${{ github.event.inputs.versionName }}
